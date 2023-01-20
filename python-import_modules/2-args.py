@@ -10,7 +10,7 @@ if __name__ == "__main__":
     if nb_argument == 0:
         print("{} arguments.".format(nb_argument))
     elif nb_argument == 1:
-        print("{} argument.".format(nb_argument))
+        print("{} argument:".format(nb_argument))
     else:
         print("{} arguments:".format(nb_argument))
 
