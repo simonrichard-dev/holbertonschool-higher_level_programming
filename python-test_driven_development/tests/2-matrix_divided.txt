@@ -13,9 +13,18 @@ TypeError: div must be a number
 Traceback (most recent call last):
 ZeroDivisionError: division by zero
 
+>>> matrix_divided(matrix, float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
 >>> matrix_divided(matrix, 'None')
 Traceback (most recent call last):
 TypeError: div must be a number
+
+>>> matrix = [['a', 3, 4], [4, 5, 9]]
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 >>> matrix_divided()
 Traceback (most recent call last):
