@@ -15,6 +15,8 @@ def print_square(size):
         raise TypeError('size must be an integer')
     if size < 0:
         raise ValueError('size must be >= 0')
+    if size == None:
+        raise TypeError("TypeError: print_square() missing 1 required positional argument: 'size'")
 
     for i in range(size):
         for j in range(size):
