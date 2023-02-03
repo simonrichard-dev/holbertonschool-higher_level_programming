@@ -31,7 +31,7 @@ class Rectangle:
     def square(cls, size=0):
         """ New Rectangle instance with = heght = size """
 
-        return Rectangle (size, size)
+        return Rectangle(size, size)
 
     def __init__(self, width=0, height=0):
         """ Initialize a new instance """
