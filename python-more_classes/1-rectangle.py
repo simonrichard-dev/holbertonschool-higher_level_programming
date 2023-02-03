@@ -36,10 +36,13 @@ class Rectangle:
 
         @property
         def heigth(self):
+            """ get the height proprety """
+
             return self.__height
 
         @heigth.setter
         def heigth(self, value):
+            """ Set the height property """
 
             if type(value) is not int:
                 raise TypeError("heigth must be an integer")
