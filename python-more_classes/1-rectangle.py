@@ -9,10 +9,11 @@
 class Rectangle:
         """ An rectangle class with width and height properties """
 
-    def __init__(self, width=0, heigth=0):
+    def __init__(self, width=0, height=0):
         """ Initialize a new instance """
 
         self.__width = width
+        self.__height = height
 
         @property
         def width(self):
@@ -31,16 +32,14 @@ class Rectangle:
             else:
                 self.__width = value
 
-        self.__heigth = heigth
-
         @property
-        def heigth(self):
+        def height(self):
             """ get the height proprety """
 
             return self.__height
 
-        @heigth.setter
-        def heigth(self, value):
+        @height.setter
+        def height(self, value):
             """ Set the height property """
 
             if type(value) is not int:
@@ -48,4 +47,4 @@ class Rectangle:
             if size < 0:
                 raise ValueError("heigth must be >= 0")
             else:
-                self.__heigth = heigth
+                self.__height = value
