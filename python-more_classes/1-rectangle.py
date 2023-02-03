@@ -5,13 +5,12 @@
     proprety setter
 """
 
+
 class Rectangle:
         """ An rectangle class with width and height properties """
 
-
     def __init__(self, width=0, heigth=0):
         """ Initialize a new instance """
-
 
         self.__width = width
 
