@@ -4,7 +4,7 @@
 
 class MyList(list):
     """ class Mylist that inherits from list """
-    
+
     def __init__(self):
         super().__init__()
 
