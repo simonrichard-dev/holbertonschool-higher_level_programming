@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Student to JSON """
-import json
 
 
 class Student ():
@@ -14,7 +13,6 @@ class Student ():
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
-    
-    def to_json(self):
 
+    def to_json(self):
         return self.__dict__
