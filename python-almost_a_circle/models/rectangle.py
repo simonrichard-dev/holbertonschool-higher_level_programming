@@ -2,6 +2,7 @@
 """ First Rectangle """
 from models.base import Base
 
+
 class Rectangle(Base):
     """ inherits from Base """
 
@@ -27,7 +28,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         self.__height = value
-    
+
     @property
     def x(self):
         return self.__x
