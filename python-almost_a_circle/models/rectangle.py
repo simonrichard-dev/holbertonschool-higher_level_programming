@@ -95,7 +95,7 @@ class Rectangle(Base):
 
         return f"[Rectangle] ({identifier}) {x}/{y} - {w}/{h}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ Method that assigns an argument to each attribute"""
         if args:
             for arg in range(len(args)):
@@ -109,3 +109,6 @@ class Rectangle(Base):
                     self.x = args[arg]
                 if arg == 4:
                     self.y = args[arg]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
