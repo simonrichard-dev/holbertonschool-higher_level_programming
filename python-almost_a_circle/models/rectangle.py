@@ -101,7 +101,7 @@ class Rectangle(Base):
             for arg in range(len(args)):
                 if arg == 0:
                     self.id = args[arg]
-                if arg == 1:                
+                if arg == 1:
                     self.width = args[arg]
                 if arg == 2:
                     self.height = args[arg]
