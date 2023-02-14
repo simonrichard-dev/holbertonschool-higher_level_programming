@@ -71,16 +71,14 @@ class Rectangle(Base):
     def display(self):
         """ print the rectangle with the character # """
 
-        if (self.__x) != 0:
-            for i in range(self.__y):
-                print("")
+        for i in range(self.__y):
+            print("")
         if (self.__height) == 0 or (self.__width) == 0:
-          return ("")
+            return ("")
         string = ""
         for i in range(self.__height):
-            if (self.__y) != 0:
-                for j in range(self.__x):
-                    string += ' '            
+            for j in range(self.__x):
+                string += ' '
             for j in range(self.__width):
                 string += '#'
             string += '\n'
