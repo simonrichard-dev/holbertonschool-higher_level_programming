@@ -28,13 +28,13 @@ class Square(Rectangle):
         return f"[Square] ({identifier}) {x}/{y} - {size}"
 
     def update(self, *args, **kwargs):
-        """ assigns attributes """
+        """ Method that assigns an argument to each attribute"""
         if args:
             for arg in range(len(args)):
                 if arg == 0:
-                    self.id == args[arg]
+                    self.id = args[arg]
                 if arg == 1:
-                    self.size == args[arg]
+                    self.size = args[arg]
                 if arg == 2:
                     self.x = args[arg]
                 if arg == 3:
