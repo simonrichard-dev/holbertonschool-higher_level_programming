@@ -114,12 +114,12 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
-        """ Method that returns the dictionary 
+        """ Method that returns the dictionary
         representation of a Rectangle """
         dictionary = {
-            'id' : self.id,
+            'id': self.id,
             'height': self.height,
             'width': self.width,
             'x': self.x,
             'y': self.y}
-        return(dictionary)
+        return (dictionary)
