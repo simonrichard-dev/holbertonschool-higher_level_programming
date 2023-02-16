@@ -92,7 +92,7 @@ class Test_Rectangle(unittest.TestCase):
         Rectangle.save_to_file([r])
         with open("Rectangle.json", "r") as f:
             content = f.read()
-        expected_output = '[{"id": 9, "width": 2, "height": 4, "x": 0, "y": 0}]'
+        expected_output = '[{"id": 9, "height": 4, "width": 2, "x": 0, "y": 0}]'
         self.assertEqual(content, expected_output)
         os.remove("Rectangle.json")
 
