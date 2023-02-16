@@ -15,19 +15,15 @@ class Test_Base(unittest.TestCase):
         b = Base(10)
         self.assertEqual(b.id, 10)
 
-
-
         result = Base.to_json_string([])
         self.assertEqual(result, "[]")
 
         result = Base.to_json_string(None)
         self.assertEqual(result, "[]")
 
-        d = [{ 'id': 12}]
+        d = [{'id': 12}]
         result = Base.to_json_string(d)
         self.assertEqual(result, '[{"id": 12}]')
-
-
 
         result = Base.from_json_string("[]")
         self.assertEqual(result, [])
