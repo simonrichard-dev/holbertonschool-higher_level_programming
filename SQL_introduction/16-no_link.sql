@@ -4,11 +4,5 @@ SELECT
     name
 FROM second_table
     WHERE 
-    (
-        score IS NOT NULL
-    AND
-        id IS NOT NULL
-    AND
         name IS NOT NULL
-    );
-ORDER BY DESC;
+    ORDER BY score DESC
