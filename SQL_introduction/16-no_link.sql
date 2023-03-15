@@ -11,4 +11,4 @@ FROM second_table
     AND
         name IS NOT NULL
     );
-    ORDER BY DESC;
+ORDER BY DESC;
