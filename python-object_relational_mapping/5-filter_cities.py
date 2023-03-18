@@ -29,3 +29,4 @@ if __name__ == "__main__":
     print(string_cities)
     cur.close()
     conn.close()
+    
