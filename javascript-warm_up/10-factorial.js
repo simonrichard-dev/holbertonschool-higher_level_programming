@@ -4,8 +4,7 @@ const number = parseInt(argv[2]);
 
 const answer = factorial(number);
 
-function factorial (n) 
-{
+function factorial (n) {
   if (Number.isInteger(number)) {
     if (n === 0 || n === 1) {
       return 1;
@@ -13,7 +12,7 @@ function factorial (n)
       return n * factorial(n - 1);
     }
   } else {
-    const number = 1
+    const number = 1;
     return number;
   }
 }
