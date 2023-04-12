@@ -6,7 +6,7 @@ const number2 = parseInt(argv[3]);
 const x = add(number1, number2);
 
 function add (a, b) {
-  return a * b;
+  return a + b;
 }
 
 console.log(x);
