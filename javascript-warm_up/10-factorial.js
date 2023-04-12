@@ -3,7 +3,7 @@ const { argv } = require('process');
 const number = parseInt(argv[2]);
 
 const answer = factorial(number);
-console.log(number)
+
 function factorial (n) 
 {
   if (Number.isInteger(number)) {
