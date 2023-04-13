@@ -13,7 +13,7 @@ if (argv[2] === undefined) {
   } if (count === 1) {
     console.log(0);
   } else {
-    array.sort(function(a, b) {
+    array.sort(function (a, b) {
       return a - b;
     });
     console.log(array[count - 2]);
