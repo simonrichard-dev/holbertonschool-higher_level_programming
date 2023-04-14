@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const Rect = require('./4-rectangle')
+const Rect = require('./4-rectangle');
 
 class Square extends Rect {
   constructor (size) {
